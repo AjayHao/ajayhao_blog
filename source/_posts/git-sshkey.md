@@ -72,6 +72,7 @@ date: 2016-04-26 19:09:00
 
      $ ssh -v -T git@github.com
 查看具体的处理过程，进行更精确的定位。
+![带-v参数](/images/posts/git-sshkey/debug.png)
 
 
 
