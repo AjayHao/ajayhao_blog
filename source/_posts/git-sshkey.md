@@ -23,7 +23,7 @@ date: 2016-04-26 19:09:00
 
 以下结合GitHub官方参考指引和相关资料，介绍两种方法:
 ### 方法一  使用ssh-agent
-#### 1.  [检查已有的SSH key](https://help.github.com/articles/generating-an-ssh-key/)
+#### 1.  [检查已有的SSH key](https://help.github.com/articles/checking-for-existing-ssh-keys/)
 #### 2.  [生成key并加入ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 这里插一小段，此处是方法一的关键，度娘上的答案大多只提到怎么生成key，却没有提到要加入ssh-agent，还有就是在执行ssh-add时遇到
  “Could not open a connection to your authentication agent”，查到的解法基本都是执行
