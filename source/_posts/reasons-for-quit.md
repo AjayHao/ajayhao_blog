@@ -1,7 +1,7 @@
 title: ICBC，再见！
 categories:
   - 生活
-thumbnail: '/images/thumbnails/why_change_job.jpg'
+thumbnail: '/images/thumbnails/reasons-for-quit.jpg'
 cc: false
 comments: true
 date: 2016-04-24 00:10:00
