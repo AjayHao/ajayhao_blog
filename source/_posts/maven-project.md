@@ -1,4 +1,4 @@
-title: 典型Maven化的Web工程
+title: 典型Maven化的Web工程(转)
 tags:
   - maven
 categories:
