@@ -3,7 +3,7 @@ tags:
   - git
 categories:
   - 技术
-thumbnail: '/images/thumbnails/git.png'
+thumbnail: '/images/thumbnails/ssh.jpg'
 cc: true
 comments: true
 date: 2016-04-26 19:09:00
