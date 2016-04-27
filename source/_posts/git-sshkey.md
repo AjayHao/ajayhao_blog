@@ -10,12 +10,12 @@ date: 2016-04-26 19:09:00
 
 ---
 
-还在脱密期，已感受到了新东家的热(hou)情(ji)，包括工作邮箱、vpn、git等环境配置邮件已邮件告知，可以远程办公这点比起现在倒是人性化了些，要是能不上班在家干活就更好了
+还在脱密期，已感受到了新东家的热(hou)情(ji)，包括工作邮箱、vpn、git等环境已邮件告知，能远程办公这点比起现在倒是人性化了些，要再能不上班在家干活就更好了
 
 （老婆：纳尼！干毛活！在家就是我的！！）
 （老板：周末在家干活行，平时？想多了吧！）
 
-走http协议拉了个代码，每次切换分支都要输入口令进行验证，后续写起代码提交的勤快些还得了？。。由于家中已配置了GitHub的SSH key，如何集成公司的GitLab环境的SSH key，使我同时用GitHub与公司GitLab时能走不同的key，免去频繁的口令验证呢？下面介绍两种管理多套环境的key的方法...
+走http协议拉了个代码，每次切换分支都要输入口令进行验证，后续写起代码提交勤快了还了得？。。由于家中已配置了GitHub的SSH key，如何集成公司的GitLab环境的SSH key，使同时用GitHub与公司GitLab时能走不同的key，免去频繁的口令验证呢？下面介绍两种管理多套环境的key的方法...
 
 <!-- more --><!-- indicate-the-source -->
 
@@ -25,7 +25,7 @@ date: 2016-04-26 19:09:00
 ### 方法一  使用ssh-agent
 #### 1.  [检查已有的SSH key](https://help.github.com/articles/checking-for-existing-ssh-keys/)
 #### 2.  [生成key并加入ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
-这里插一小段，此处是方法一的关键，度娘上的答案大多只提到怎么生成key，却没有提到要加入ssh-agent，还有就是在执行ssh-add时遇到
+此处是方法一的关键，度娘上的答案大多只提到怎么生成key，却没有提到要加入ssh-agent，另外在执行ssh-add时遇到
  “Could not open a connection to your authentication agent”，查到的解法基本都是执行
 
     $ ssh-agent bash
@@ -35,7 +35,7 @@ date: 2016-04-26 19:09:00
     $ eval `ssh-agent -s`
 问题解决~，查看ssh-agent中的密钥
 
-    $ ssh-agent -l
+    $ ssh-add -l
 
 #### 3. [加到Git账户中](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
 不单单适用于GitHub，其他Git仓库也类似
@@ -48,10 +48,10 @@ date: 2016-04-26 19:09:00
     Host gitlab.xxx.com
         HostName gitlab.xxx.com
         User git
-        Port 22
+        PreferredAuthentications publickey
         IdentityFile ~/.ssh/id_rsa_work
 
- 可以延用公司给的gitlab域名，也可以自定义域名，但后续git链接中的地址需要相应调整
+ 第一行的 Host 只是一个名字，第三行的 Hostname 才是对应的真实地址，但是两者最好保持一致，这样后续git链接中的地址就不需要转换。
 
 ### 最后进行SSH连接测试
 执行以下命令
@@ -68,12 +68,16 @@ date: 2016-04-26 19:09:00
 
 ![验证后](/images/posts/git-sshkey/pic2.png)
 
-另外在失败时，可以通过
+另外在失败时，可以通过在ssh中加上-v参数，查看具体的处理过程，进行更精确的定位.
 
      $ ssh -v -T git@github.com
-查看具体的处理过程，进行更精确的定位。
+
 ![带-v参数](/images/posts/git-sshkey/debug.png)
 
+### 小结
 
+两个方法都能实现多套key的存储，但方法一有个缺陷
 
+ssh-add 这个命令不是用来永久性的记住你所使用的私钥的。实际上，它的作用只是把你指定的私钥添加到 ssh-agent 所管理的一个 session 当中。所以ssh-agent 是一个用于**存储私钥的临时性的 session 服务**，当你重启之后，ssh-agent 服务也就重置了，不过我们完全可以用脚本自动化这件事，以便启动终端的时候完成。
 
+方法二的操作方式是使用ssh config的配置做定向管理，作用和Mac OS上的Keychain类似，相比方法一，易用性更佳。
