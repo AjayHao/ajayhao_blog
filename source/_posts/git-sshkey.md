@@ -81,3 +81,5 @@ date: 2016-04-26 19:09:00
 ssh-add 这个命令不是用来永久性的记住你所使用的私钥的。实际上，它的作用只是把你指定的私钥添加到 ssh-agent 所管理的一个 session 当中。所以ssh-agent 是一个用于**存储私钥的临时性的 session 服务**，当你重启之后，ssh-agent 服务也就重置了，不过我们完全可以用脚本自动化这件事，以便启动终端的时候完成。
 
 方法二的操作方式是使用ssh config的配置做定向管理，作用和Mac OS上的Keychain类似，相比方法一，易用性更佳。
+
+P.S. 配置了SSH key之后，一些外部提交方式的提交库的协议方式也应相应调整，如GitExtentions的管理远程代码库、hexo的deploy.repository参数等，都应切换成git@xxx.com:username/repo.git，而不再用https://xxx.com/username/repo.git
