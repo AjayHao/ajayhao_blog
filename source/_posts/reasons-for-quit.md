@@ -1,7 +1,7 @@
 title: ICBC，再见！
 categories:
   - 生活
-thumbnail: '/images/thumbnails/reasons-for-quit.jpg'
+thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/reasons-for-quit.jpg'
 cc: false
 comments: true
 date: 2016-04-24 00:10:00
@@ -28,4 +28,4 @@ date: 2016-04-24 00:10:00
 
 so，一图以蔽之。
 
-![](/images/posts/reasons-for-quit/why_will_change_jobs.jpg)
+![](http://7xth6d.com1.z0.glb.clouddn.com/posts/reasons-for-quit/why_will_change_jobs.jpg)

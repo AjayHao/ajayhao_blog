@@ -3,7 +3,7 @@ tags:
   - maven
 categories:
   - 技术
-thumbnail: '/images/thumbnails/maven-logo.png'
+thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/maven-logo.png'
 cc: true
 comments: true
 date: 2016-04-12 21:30:00
@@ -16,7 +16,7 @@ date: 2016-04-12 21:30:00
 ## 一、工程实例
 非常典型的Maven化的Web工程
 
-![](/images/posts/maven-project/maven1.png)
+![](http://7xth6d.com1.z0.glb.clouddn.com/posts/maven-project/maven1.png)
 
 对应的POM.xml如下：
 
@@ -51,7 +51,7 @@ War生成在根目录下
     
 如下图，概况Maven生成War包过程        
 
-![](/images/posts/maven-project/maven2.png)
+![](http://7xth6d.com1.z0.glb.clouddn.com/posts/maven-project/maven2.png)
 
 ## 二、Maven 默认配置
 我们都知道Maven可以很容易的把源文件工程创建为War包，但是POM文件中什么也没有设置。这是怎么回事啊？实际上Maven有自己默认的设置。这称之为 “convention over configuration”，Maven在配置中提供默认值。
@@ -116,29 +116,29 @@ Compiler 插件有两个目标：compiler:compile 和 compiler:testCompile
 1.resources:resources
 此目标用来将资源文件夹下的内容拷贝到输出目录
 
-![](/images/posts/maven-project/maven3.png)
+![](http://7xth6d.com1.z0.glb.clouddn.com/posts/maven-project/maven3.png)
 
 2.compiler:compile
 此目标编译源项目工程
 
-![](/images/posts/maven-project/maven4.png)
+![](http://7xth6d.com1.z0.glb.clouddn.com/posts/maven-project/maven4.png)
 
 3.resources:testResources
 此目标编译源项目工程
 
-![](/images/posts/maven-project/maven5.png)
+![](http://7xth6d.com1.z0.glb.clouddn.com/posts/maven-project/maven5.png)
 
 4.compiler:testCompile
 此目标编译测试项目	
 
-![](/images/posts/maven-project/maven6.png)
+![](http://7xth6d.com1.z0.glb.clouddn.com/posts/maven-project/maven6.png)
 
 5.surefire:test
 此目标执行工程的单元测试，编译的测试类放在
 
     /target/test-classes
     
-![](/images/posts/maven-project/maven7.png)    
+![](http://7xth6d.com1.z0.glb.clouddn.com/posts/maven-project/maven7.png)
 
 6.war:war
 此目录创建War包。它会把所有需要的文件放在
@@ -151,15 +151,14 @@ Compiler 插件有两个目标：compiler:compile 和 compiler:testCompile
     
 拷贝到输出目录。        
 
-![](/images/posts/maven-project/maven8.png)  
-
+![](http://7xth6d.com1.z0.glb.clouddn.com/posts/maven-project/maven8.png)
 War插件另外一个重要步骤是拷贝Class文件到到 WEB-INF/classes目录和项目所依赖的jar包到 WEB-INF/lib目录。
 默认情况下，插件还包含两个Maven描述文件：
 
 	META-INF/maven/${groupId}/${artifactId}/pom.xml
 	META-INF/maven/${groupId}/${artifactId}/pom.properties
 	
-![](/images/posts/maven-project/maven9.png)
+![](http://7xth6d.com1.z0.glb.clouddn.com/posts/maven-project/maven9.png)
 
 最终的War包放在/target/目录下。
 
@@ -174,6 +173,6 @@ pom.xml文件会有一个默认的（JUnit）依赖。我们可以加另外一�
 当没有设置依赖范围 （scope），默认为 compile scope。这就意味着此依赖在编译、测试、运行阶段都可以得到。
 只要是运行中会用到的jar包，都会拷贝到/WEB-INF/lib目录
 
-![](/images/posts/maven-project/maven10.png)
+![](http://7xth6d.com1.z0.glb.clouddn.com/posts/maven-project/maven10.png)
 
 

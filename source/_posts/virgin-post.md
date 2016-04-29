@@ -3,7 +3,7 @@ tags:
   - 杂谈
 categories:
   - 生活
-thumbnail: '/images/thumbnails/sailing.jpg'
+thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/sailing.jpg'
 cc: true
 comments: true
 date: 2016-01-18 21:30:00
@@ -26,4 +26,6 @@ date: 2016-01-18 21:30:00
 
 * **Xuanwo** : [Hexo常见问题解决方案](https://xuanwo.org/2014/08/14/hexo-usual-problem/)
 
-![终于~启航！](/images/posts/virgin-post/sails.jpg "启航")
+* **chitanda** : [hexo博客搭建时遇到的一些问题](https://segmentfault.com/a/1190000003710962?_ea=336354/)
+
+![终于~启航！](http://7xth6d.com1.z0.glb.clouddn.com/posts/virgin-post/sails.jpg "启航")
