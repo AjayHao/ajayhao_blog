@@ -16,6 +16,6 @@ So..Don’t Have to Try So Hard..Just relax , and share , and **have FUN** !!!
 
 ### 联系方式
 
-* **Email** - [ajay.hao@gmail.com](ajay.hao@gmail.com)
-* **Github** - [github.com/ajayhao](github.com/ajayhao)
-* **Weibo** - [weibo.com/ajayhao](weibo.com/ajayhao)
+* **Email** - [ajay.hao@gmail.com](http://ajay.hao@gmail.com)
+* **Github** - [github.com/ajayhao](http://github.com/ajayhao)
+* **Weibo** - [weibo.com/ajayhao](http://weibo.com/ajayhao)
