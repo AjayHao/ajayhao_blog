@@ -66,7 +66,14 @@ per_page: 7
 pagination_dir: page
 
 # Extensions
-## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
+Plugins:
+##https://github.com/hexojs/hexo/wiki/Plugins
+- hexo-generator-sitemap
+
+#sitemap
+sitemap:
+  path: sitemap.xml
+
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
 theme: ajs
 
@@ -83,5 +90,7 @@ swiftype_install_key: 1_ESJBpH-B8P-WKgkQfz
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:AjayHao/ajayhao.github.io.git
+  repository:
+    github: git@github.com:AjayHao/ajayhao.github.io.git
+    coding.net: git@git.coding.net:ajayhao/ajayhao.git
   branch: master
