@@ -1,4 +1,4 @@
-title: Markdown语法速查表(原)
+title: Markdown语法速查表
 tags:
   - markdown
 categories:
