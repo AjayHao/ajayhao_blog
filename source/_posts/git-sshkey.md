@@ -1,24 +1,21 @@
-title: 应对多套git环境的ssh-key管理方案(原)
+title: 应对多套git环境的ssh-key管理方案
 tags:
   - git
 categories:
   - 技术
 thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/ssh.jpg'
-cc: true
 comments: true
 date: 2016-04-26 19:09:00
-
+isorigin: true
 ---
-#### **`原创贴，转发请注明作者或出处`**
-
+每个程序员都有会不止一套Git环境的访问需求，不是现在，就是不远的将来。。。
+<!-- more -->
 还在脱密期，已感受到了新东家的热(hou)情(ji)，包括工作邮箱、vpn、git等环境已邮件告知，能远程办公这点比起现在倒是人性化了些，要再能不上班在家干活就更好了
 
 （老婆：纳尼！干毛活！在家就是我的！！）
 （老板：周末在家干活行，平时？想多了吧！）
 
-走http协议拉了个代码，每次切换分支都要输入口令进行验证，后续写起代码提交勤快了还了得？。。由于家中已配置了GitHub的SSH key，如何集成公司的GitLab环境的SSH key，使同时用GitHub与公司GitLab时能走不同的key，免去频繁的口令验证呢？下面介绍两种管理多套环境的key的方法...
-
-<!-- more --><!-- indicate-the-source -->
+走http协议拉了个代码，每次切换分支都要输入口令进行验证，后续写起代码提交勤快了还了得？。。由于家中已配置了GitHub的SSH key，如何集成公司的GitLab环境的SSH key，使同时用GitHub与公司GitLab时能走不同的key，免去频繁的口令验证呢？下面介绍两种管理多套环境的key的方法
 
 友情提示：Windows平台下的童鞋，以下操作请到Cygwin/msysGit等支持git bash的环境下执行。
 

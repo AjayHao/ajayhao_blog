@@ -4,7 +4,6 @@ tags:
 categories:
   - 生活
 thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/sailing.jpg'
-cc: true
 comments: true
 date: 2016-01-18 21:30:00
 

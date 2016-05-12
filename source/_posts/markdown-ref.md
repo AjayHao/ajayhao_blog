@@ -4,12 +4,11 @@ tags:
 categories:
   - 技术
 thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/markdown_thumbnail.jpg'
-cc: true
 comments: true
 date: 2016-02-03 21:00:00
+isorigin: true
 
 ---
-#### **`原创贴，转发请注明作者或出处`**
 
 开始写博以后，Markdown会频繁接触，网上已经有了很多参考资料，大多也很全很详细。可惜几乎全是纵排的，类似wiki中表格型排版的很少，可能把这些语法集中表格里也比较费时，所以整理了张简便易用的速查表格,供参考。
 
