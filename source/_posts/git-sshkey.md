@@ -6,7 +6,7 @@ categories:
 thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/ssh.jpg'
 comments: true
 date: 2016-04-26 19:09:00
-isorigin: true
+origin_type : 'o'
 ---
 每个程序员都有会不止一套Git环境的访问需求，不是现在，就是不远的将来。。。
 <!-- more -->

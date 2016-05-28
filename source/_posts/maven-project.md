@@ -1,4 +1,4 @@
-title: 典型Maven化的Web工程(转)
+title: 典型Maven化的Web工程
 tags:
   - maven
 categories:
@@ -7,6 +7,7 @@ thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/maven-logo.png'
 cc: true
 comments: true
 date: 2016-04-12 21:30:00
+origin_type : 'f'
 
 ---
 在处理Web应用的时候，最终使用的工程文件是以War包的形式交付。Maven编译系统可以轻松的创建War包。接下来就让我们看看Maven是如何把一个源文件的工程转换成War包的。

@@ -6,7 +6,7 @@ categories:
 thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/markdown_thumbnail.jpg'
 comments: true
 date: 2016-02-03 21:00:00
-isorigin: true
+origin_type : 'o'
 
 ---
 

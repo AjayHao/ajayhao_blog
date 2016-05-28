@@ -1,4 +1,4 @@
-title: git常用操作示例(转)
+title: git常用操作示例
 tags:
   - git
 categories:
@@ -7,6 +7,7 @@ thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/git.png'
 cc: true
 comments: true
 date: 2016-03-31 20:30:00
+origin_type : 'f'
 
 ---
 摘选自
