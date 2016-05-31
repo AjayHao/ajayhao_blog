@@ -1,6 +1,6 @@
 title: J2EE代码结构推荐
 tags:
-  - git
+  - J2EE
 categories:
   - 技术
 thumbnail: 'http://ajayhao.com/images/thumbnails/struct.jpg'
