@@ -3,7 +3,7 @@ tags:
   - git
 categories:
   - 技术
-thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/ssh.jpg'
+thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/images/thumbnails/ssh.jpg'
 comments: true
 date: 2016-04-26 19:09:00
 origin_type : 'o'
@@ -59,18 +59,18 @@ origin_type : 'o'
     $ ssh -T git@gitlab.xxx.com
 
 结果如下：
-![测试结果](http://7xth6d.com1.z0.glb.clouddn.com/posts/git-sshkey/result1.png)
+![测试结果](http://7xth6d.com1.z0.glb.clouddn.com/images/posts/git-sshkey/result1.png)
 
 验证通过后，GitHub的key状态还会发生变化
-![验证前](http://7xth6d.com1.z0.glb.clouddn.com/posts/git-sshkey/pic1.png)
+![验证前](http://7xth6d.com1.z0.glb.clouddn.com/images/posts/git-sshkey/pic1.png)
 
-![验证后](http://7xth6d.com1.z0.glb.clouddn.com/posts/git-sshkey/pic2.png)
+![验证后](http://7xth6d.com1.z0.glb.clouddn.com/images/posts/git-sshkey/pic2.png)
 
 另外在失败时，可以通过在ssh中加上-v参数，查看具体的处理过程，进行更精确的定位.
 
      $ ssh -v -T git@github.com
 
-![带-v参数](http://7xth6d.com1.z0.glb.clouddn.com/posts/git-sshkey/debug.png)
+![带-v参数](http://7xth6d.com1.z0.glb.clouddn.com/images/posts/git-sshkey/debug.png)
 
 ### 小结
 

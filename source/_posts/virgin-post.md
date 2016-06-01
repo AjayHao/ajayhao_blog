@@ -3,7 +3,7 @@ tags:
   - 杂谈
 categories:
   - 生活
-thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/thumbnails/sailing.jpg'
+thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/images/thumbnails/sailing.jpg'
 comments: true
 date: 2016-01-18 21:30:00
 
@@ -27,4 +27,4 @@ date: 2016-01-18 21:30:00
 
 * **chitanda** : [hexo博客搭建时遇到的一些问题](https://segmentfault.com/a/1190000003710962?_ea=336354/)
 
-![终于~启航！](http://7xth6d.com1.z0.glb.clouddn.com/posts/virgin-post/sails.jpg "启航")
+![终于~启航！](http://7xth6d.com1.z0.glb.clouddn.com/images/posts/virgin-post/sails.jpg "启航")
