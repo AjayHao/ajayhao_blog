@@ -45,7 +45,7 @@ origin_type : 'f'
 7. 回购首期：回购融入资金进入银行存款。回购末期：银行存款冲抵卖出回购负债。可参看前面回购业务介绍文章。
 8. 期末结转的时候，各类损益进入未分配利润。
 
-![会计核算流程](http://7xth6d.com1.z0.glb.clouddn.com/images/banners/fund-accounting.png)
+![会计核算流程](http://7xth6d.com1.z0.glb.clouddn.com/images/banners/insurance-accounting.png)
 
 ## 两者差异
 1 资金进出不一样。基金资产为投资者参与投资的钱。保险资金为从保费中划入投资部分的资金。
