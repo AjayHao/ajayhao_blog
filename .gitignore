@@ -1,0 +1,10 @@
+db.json
+node_modules/
+public/
+themes/ajs/
+.settings/
+.project
+.idea/
+.deploy_git/
+ajayblog.iml
+source/images/pure/
