@@ -37,9 +37,9 @@ Git创建Develop分支的命令：
 将Develop分支发布到Master分支的命令：
 
      # 切换到Master分支
-     # git checkout master
-	  # 对Develop分支进行合并
-     # git merge --no-ff develop  
+     git checkout master
+	 # 对Develop分支进行合并
+     git merge --no-ff develop  
      
 其中，–no-ff参数是什么意思。默认情况下，Git执行”快进式合并”（fast-farward merge），会直接将Master分支指向Develop分支。
 
