@@ -2,11 +2,11 @@ title: RocketMQ系列
 tags:
   - RocketMQ
 categories:
-  - 金融业务
+  - 技术积累
 thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/images/thumbnails/accounting.jpg'
 comments: true
 date: 2017-06-27 10:50:00
-origin_type : 'o'
+origin_type : 'f'
 
 ---
 RocketMQ是一个分布式开放消息中间件，底层基于队列模型来实现消息收发功能。RocketMQ集群中包含4个模块：Namesrv, Broker, Producer, Consumer。
@@ -39,5 +39,6 @@ win7环境下 搭建过程：
 
 4. 启动Broker， 文件存储路径： ~/store/config/
 
-    > mqbroker.cmd -n localhost:9876
+    > mqbroker.cmd -n localhost:9876 autoCreateTopicEnable=true
 
+5. 消息持久化路径： ~/store/consumequeue/<Topic>
