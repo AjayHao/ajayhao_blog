@@ -1,6 +1,7 @@
 title: RocketMQ系列（二）
 tags:
   - RocketMQ
+  - 消息
 categories:
   - 技术积累
 thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/images/thumbnails/accounting.jpg'
