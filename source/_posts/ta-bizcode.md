@@ -4,7 +4,7 @@ tags:
   - 基金业务
 categories:
   - 金融业务
-thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/images/thumbnails/ta.jpg'
+thumbnail: '/images/thumbnails/ta.jpg'
 cc: true
 comments: true
 date: 2016-07-03 09:31:00

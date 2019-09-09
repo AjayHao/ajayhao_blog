@@ -3,7 +3,7 @@ tags:
   - 会计核算
 categories:
   - 金融业务
-thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/images/thumbnails/accounting.jpg'
+thumbnail: '/images/thumbnails/accounting.jpg'
 cc: true
 comments: true
 date: 2016-06-22 22:31:00
@@ -30,7 +30,7 @@ origin_type : 'f'
 11. 权益分派的红利再投日，增加实收基金和损益平准金，减少应付利润。
 12. 产品赎回时，减少实收基金和损益平准金，增加应付赎回款。最终从银行存款进行支付。
 
-![会计核算流程](http://7xth6d.com1.z0.glb.clouddn.com/images/posts/accounting-framework/fund-accounting.png)
+![会计核算流程](/images/posts/accounting-framework/fund-accounting.png)
 
 ## 保险资金会计核算内框架
 
@@ -43,7 +43,7 @@ origin_type : 'f'
 7. 回购首期：回购融入资金进入银行存款。回购末期：银行存款冲抵卖出回购负债。可参看前面回购业务介绍文章。
 8. 期末结转的时候，各类损益进入未分配利润。
 
-![会计核算流程](http://7xth6d.com1.z0.glb.clouddn.com/images/posts/accounting-framework/insurance-accounting.png)
+![会计核算流程](/images/posts/accounting-framework/insurance-accounting.png)
 
 ## 两者差异
 1 资金进出不一样。基金资产为投资者参与投资的钱。保险资金为从保费中划入投资部分的资金。

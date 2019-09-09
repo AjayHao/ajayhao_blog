@@ -4,7 +4,7 @@ tags:
   - java
 categories:
   - 技术
-thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/images/thumbnails/mybatis.jpg'
+thumbnail: '/images/thumbnails/mybatis.jpg'
 cc: true
 comments: true
 date: 2017-07-13 18:31:00

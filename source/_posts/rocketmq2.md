@@ -4,7 +4,7 @@ tags:
   - 消息
 categories:
   - 技术积累
-thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/images/thumbnails/accounting.jpg'
+thumbnail: '/images/thumbnails/accounting.jpg'
 comments: true
 date: 2017-07-03 10:50:00
 origin_type : 'f'

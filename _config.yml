@@ -16,9 +16,9 @@ language: zh-CN
 timezone:
 since: 2016 # The start year showing in your copyright section.
 
-# URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://ajayhao.com
+## If your site is put in a subdir
+# URLectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://ajayhao.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

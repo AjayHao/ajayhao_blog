@@ -3,7 +3,7 @@ tags:
   - 多线程
 categories:
   - 技术
-thumbnail: 'http://7xth6d.com1.z0.glb.clouddn.com/images/thumbnails/ssh.jpg'
+thumbnail: '/images/thumbnails/ssh.jpg'
 comments: true
 date: 2016-11-30 17:09:02
 origin_type : 'f'
