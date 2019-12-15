@@ -6,7 +6,7 @@ categories:
 thumbnail: '/images/thumbnails/markdown_thumbnail.jpg'
 comments: true
 date: 2016-02-03 21:00:00
-origin_type : 'o'
+original : true
 
 ---
 

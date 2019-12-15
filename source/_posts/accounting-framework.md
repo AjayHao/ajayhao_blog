@@ -7,7 +7,7 @@ thumbnail: '/images/thumbnails/accounting.jpg'
 cc: true
 comments: true
 date: 2016-06-22 22:31:00
-origin_type : 'f'
+original : false
 
 ---
 

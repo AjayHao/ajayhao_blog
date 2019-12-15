@@ -8,7 +8,7 @@ thumbnail: '/images/thumbnails/mybatis.jpg'
 cc: true
 comments: true
 date: 2017-07-13 18:31:00
-origin_type : 'f'
+original : false
 
 ---
 

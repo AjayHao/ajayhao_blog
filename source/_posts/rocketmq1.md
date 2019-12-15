@@ -7,7 +7,7 @@ categories:
 thumbnail: '/images/thumbnails/accounting.jpg'
 comments: true
 date: 2017-06-27 10:50:00
-origin_type : 'f'
+original: false
 
 ---
 RocketMQ是一个分布式开放消息中间件，底层基于队列模型来实现消息收发功能。RocketMQ集群中包含4个模块：Namesrv, Broker, Producer, Consumer。

@@ -6,8 +6,10 @@ categories:
 thumbnail: '/images/thumbnails/ssh.jpg'
 comments: true
 date: 2016-11-30 17:09:02
-origin_type : 'f'
+original: false
+
 ---
+
 摘选并翻译自
 Oracle Java 语言架构师 Brian Goetz的专栏月刊：[Java 理论与实践](http://www.ibm.com/developerworks/cn/java/j-jtp/)
 

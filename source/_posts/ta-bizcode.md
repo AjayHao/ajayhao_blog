@@ -8,7 +8,7 @@ thumbnail: '/images/thumbnails/ta.jpg'
 cc: true
 comments: true
 date: 2016-07-03 09:31:00
-origin_type : 'f'
+original: false
 
 ---
 根据《开放式基金业务数据交换协议（证监会2012-05-17 发布）》的业务类型编码整理而来，留备速查

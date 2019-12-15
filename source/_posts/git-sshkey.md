@@ -6,7 +6,8 @@ categories:
 thumbnail: '/images/thumbnails/ssh.jpg'
 comments: true
 date: 2016-04-26 19:09:00
-origin_type : 'o'
+original: true
+
 ---
 每个程序员都有会不止一套Git环境的访问需求，不是现在，就是不远的将来。。。
 <!-- more -->

@@ -7,7 +7,7 @@ categories:
 thumbnail: '/images/thumbnails/accounting.jpg'
 comments: true
 date: 2017-07-03 10:50:00
-origin_type : 'f'
+original: false
 
 ---
 

@@ -6,7 +6,7 @@ categories:
 thumbnail: 'http://ajayhao.github.io/images/thumbnails/struct.jpg'
 comments: true
 date: 2016-05-29 12:09:00
-origin_type : 'o'
+original: true
 ---
 
 J2EE项目一般都有比较类似的目录层次，有了maven后，项目的大框架已经有了一种默认规约，而一个清晰良好的目录结构，能够为后续项目的“健康发展”提供很重要的支持。在一个结构良好的代码框架下，既能快速定位资源，便于日常维护，提升开发效率，又能使新的开发成员快速熟悉模块关联，便于开发团队新老交替，技术传承。

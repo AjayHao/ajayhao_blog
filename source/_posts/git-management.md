@@ -7,7 +7,7 @@ thumbnail: '/images/thumbnails/git.png'
 cc: true
 comments: true
 date: 2016-03-31 20:30:00
-origin_type : 'f'
+original: false
 
 ---
 摘选自
