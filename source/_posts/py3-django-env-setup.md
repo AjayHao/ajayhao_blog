@@ -1,12 +1,13 @@
 title: Python3及Django2.6环境搭建
+date: 2019-10-22 22:07:00
 tags:
   - python
   - django
 categories:
   - 技术
 comments: true
-date: 2019-10-22 22:07:00
-original : true
+top: 1
+original: true
 
 ---
 
