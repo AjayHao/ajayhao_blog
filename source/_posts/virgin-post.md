@@ -27,4 +27,4 @@ date: 2016-01-18 21:30:00
 
 * **chitanda** : [hexo博客搭建时遇到的一些问题](https://segmentfault.com/a/1190000003710962?_ea=336354/)
 
-![终于~启航！](/images/posts/virgin-post/sails.jpg "启航")
+![终于~启航！](https://s2.ax1x.com/2020/01/04/lwcgl4.jpg "启航")
