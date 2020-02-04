@@ -6,7 +6,7 @@ tags:
 categories:
   - 技术
 comments: true
-*[·-·]: top: 1
+<!-- top: 1 -->
 original: true
 
 ---
