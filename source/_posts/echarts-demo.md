@@ -1,4 +1,4 @@
-title: Echarts图表
+title: 数据分析可视化工具之 - Echarts
 date: 2020-02-06 22:14:00
 tags:
   - echarts
