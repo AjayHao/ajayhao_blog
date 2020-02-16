@@ -12,8 +12,90 @@ original: true
 
 &emsp;&emsp;最近开始研究数据分析和数据挖掘，两方面的基本功要夯实，一块是数据建模，另一块是可视化。 现有的可视化工具已经非常丰富，图表构成也非常齐全，很多也支持个性化。 具体的可视化工具比较可参考：[有哪些值得推荐的数据可视化工具？](https://www.zhihu.com/question/19929609)
 
-&emsp;&emsp;其实看了知乎各路大神的推荐，心中多少已经有底了。。真正的重剑无锋大巧不工，最值得学的还是Excel啊！跑题了。。本次还是专心研究Echarts吧。。
+&emsp;&emsp;其实看了知乎各路大神的推荐，心中多少已经有底了。。真正的重剑无锋大巧不工，最值得学的还是Excel啊！
 
+&emsp;&emsp;Echarts加入到apache基金会后，文档方面完善了很多，不但有了更规范的API和教程，也有了每种图表分门别类的数据速查手册，对于快速上手和开发益处多多。
+
+## 一. 组件（component）
+
+### 1. 组件构成
+
+&emsp;&emsp;组件是构成图表的要素，常用的组件有xAxis（直角坐标系 X 轴）、yAxis（直角坐标系 Y 轴）、grid（直角坐标系底板）、angleAxis（极坐标系角度轴）、radiusAxis（极坐标系半径轴）、polar（极坐标系底板）、geo（地理坐标系）、dataZoom（数据区缩放组件）、visualMap（视觉映射组件）、tooltip（提示框组件）、toolbox（工具栏组件）、series（系列）等。
+
+![组件](https://s2.ax1x.com/2020/02/14/1v89js.jpg)
+
+
+&emsp;&emsp;其中系列是比较特殊的组件，是图表的核心数据展现区域，一个系列中可以包含一到多个图表类型，可进行自定义排布与叠加。分单序列数据与数据集方式。
+
+![series-data方式](https://s2.ax1x.com/2020/02/14/1vGKJS.jpg)
+
+![series-dataset方式](https://s2.ax1x.com/2020/02/14/1vGdWF.jpg)
+
+### 2. 组件定位
+
+&emsp;&emsp;通过grid的位置属性来精确定位图表所在位置
+![定位](https://s2.ax1x.com/2020/02/14/1vJwAP.jpg)
+
+&emsp;&emsp;多个grid
+![grid阵列](https://s2.ax1x.com/2020/02/15/1vJv4K.jpg)
+
+
+### 3. 行列映射
+
+&emsp;&emsp;使用seriesLayoutBy配置项，改变图表对于行列的理解。 seriesLayoutBy可取值：
+
+* 'column': 默认值。系列被安放到 dataset 的列上面。
+* 'row': 系列被安放到 dataset 的行上面。
+
+{% echarts 500 '90%' %}
+{
+    title: {
+        text: '行列映射'
+    },
+    legend: {
+        left: 100
+    },
+    tooltip: {},
+    dataset: {
+        source: [
+            ['product', '2012', '2013', '2014', '2015'],
+            ['Matcha Latte', 41.1, 30.4, 65.1, 53.3],
+            ['Milk Tea', 86.5, 92.1, 85.7, 83.1],
+            ['Cheese Cocoa', 24.1, 67.2, 79.5, 86.4]
+        ]
+    },
+    xAxis: [
+        {type: 'category', gridIndex: 0},
+        {type: 'category', gridIndex: 1}
+    ],
+    yAxis: [
+        {gridIndex: 0},
+        {gridIndex: 1}
+    ],
+    grid: [
+        {bottom: '55%'},
+        {top: '55%'}
+    ],
+    series: [
+        // 这几个系列会在第一个直角坐标系中，每个系列对应到 dataset 的每一行。
+        {type: 'bar', seriesLayoutBy: 'row'},
+        {type: 'bar', seriesLayoutBy: 'row'},
+        {type: 'bar', seriesLayoutBy: 'row'},
+        // 这几个系列会在第二个直角坐标系中，每个系列对应到 dataset 的每一列。
+        {type: 'bar', xAxisIndex: 1, yAxisIndex: 1},
+        {type: 'bar', xAxisIndex: 1, yAxisIndex: 1},
+        {type: 'bar', xAxisIndex: 1, yAxisIndex: 1},
+        {type: 'bar', xAxisIndex: 1, yAxisIndex: 1}
+    ]
+};
+
+{% endecharts %}
+
+### 其他详细教程参考：
+
+&emsp;&emsp;下面给出一些基本的图例，具体可参考[Echarts官方教程](https://www.echartsjs.com/zh/tutorial.html)
+
+------
 
 {% echarts 500 '90%' %}
 {
