@@ -156,11 +156,11 @@ original: true
     
 ### 普通日期转换
 &emsp;&emsp;这边的转换指时间日期按照规则计算并返回，并不影响调用对象localDate的原始值
+    
     LocalDate localDate = LocalDate.of(2020, 2, 23);
     localDate.withDayOfMonth(1));  // 转为该月的第1天： 2020-02-01
     localDate.withDayOfYear(1));   // 转为该年的第1天： 2020-01-01
-    localDate.withMonth(1));       // 替换月份为1：2020-01-23                    
-    localDate.withYear(2019));     // 替换年份为2019：2019-02-23
+    localDate.withMonth(1));       // 替换月份为1：2020-01-23          localDate.withYear(2019));     // 替换年份为2019：2019-02-23
     
 ### 高级日期转换
 &emsp;&emsp;高级日期替换需要配合TemporalAdjusters这个类，其提供了自由度更高的替换
