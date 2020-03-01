@@ -76,7 +76,7 @@ original: true
     Local time : 21:30
 
 
-## （二）. 日期、时间获取
+## （三）. 日期、时间获取
 ### 当前日期
     LocalDate today = LocalDate.now();
     System.out.println("Local date : " + today);
