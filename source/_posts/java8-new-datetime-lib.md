@@ -182,7 +182,7 @@ original: true
     LocalDate localDate = LocalDate.of(2020, 2, 23);
     LocalDate.of(localDate.getYear(), localDate.getMonth().firstMonthOfQuarter().getValue(),1) // 该年最后一天：2020-01-01
     
-### 日期的判断
+### 日期的比较
 &emsp;&emsp;可以对两个 LocalDate 进行比较，可以判断一个日期是否在另一个日期之前或之后，或者判断两个日期是否是同年同月同日。
 
     LocalDate localDate = LocalDate.of(2020, 2, 23);
