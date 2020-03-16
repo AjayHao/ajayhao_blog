@@ -298,7 +298,7 @@ forEach、forEachOrdered、 toArray、 reduce、collect、 max、min、count
 
 &emsp;&emsp;然后种子值成为 Stream 的第一个元素，f(seed) 为第二个，f(f(seed)) 第三个，以此类推。
 
-    Stream.iterate(0, n -> n + 3).limit(10). forEach(x -> System.out.print(x + " "));
+    Stream.iterate(0, n -> n + 3).limit(10).forEach(x -> System.out.print(x + " "));
     // 0 3 6 9 12 15 18 21 24 27
     
 # 五. 聚合操作
