@@ -29,9 +29,11 @@ original: true
 ![腾讯云图](https://mc.qcloudimg.com/static/img/ffb738e6f802b8b5a3f279fbe1dc1d98/CJ11.png "腾讯云图")
 
 ### 4. Flourish：*(https://flourish.studio/)*
-&emsp;&emsp;老外的网站，开源免费，在油管上看到有播主上传的手把手教程，10分钟搞定动态条形图，简单易懂，推荐一下。
+&emsp;&emsp;老外的网站，有不少免费的图表库，在油管上看到有播主上传的手把手教程，10分钟搞定动态条形图，简单易懂，推荐一下。
 
-<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1718608"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/1718608">
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+</div>
 
 
 ## 二. 资料篇
