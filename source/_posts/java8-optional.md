@@ -10,9 +10,7 @@ original: true
 ---
 @[toc]
 
-# 一. 前言
-
-## （一）概述
+## 一. 概述
 
 &emsp;&emsp;在Java8之前，null值的判断一直是困扰Java程序员的问题，大家可能都有这样的经历：调用一个方法得到了返回值却不能直接将返回值作为参数去调用别的方法。我们首先要判断这个返回值是否为null，只有在非空的前提下才能将其作为其他方法的参数。为了防止NullPointException的出现，我们不得不编写大量的防御性代码，如下例所示：
 
@@ -29,7 +27,7 @@ original: true
 
 &emsp;&emsp;本文会逐个探讨Optional类包含的方法，并通过一两个示例展示如何使用。
 
-## （二）方法及示例
+## 二. 方法及示例
 ### 1. of
 
 > 为非null的值创建一个Optional。
@@ -164,4 +162,24 @@ original: true
     //输出：name长度不足6字符
     System.out.println(shortName.orElse("The name is less than 6 characters"));
     
-    
+## 三. 综合运用
+
+&emsp;&emsp;下面的代码是在实际项目中的综合运用，Optional分别应用于对象和集合，供参考。
+
+            final SrInfo srInfo = querySrDetail(srId);
+            //仅系统为fwpt. 且选择需要通知时，才推送客服邮件
+            Optional.ofNullable(srInfo).filter(item -> "fwpt".equals(item.getMainSysFlag()) && "1".equals(item.getNotifyFlag()))
+                    .ifPresent(item -> {
+                        List<String> csUsers = queryCustomerServiceRole();
+                        Map<String, Object> paramMap = srEntityHelper.buildCsMailParamMap(item);
+                        List<String> attachList = Optional.ofNullable(srInfo.getAttachmentList()).map(list -> list.stream()
+                                .map(SrAttachment::getAttachmentId).collect(Collectors.toList())).orElse(null);
+                        EmailMessageParam emailMessageParam = MailParamBuilder.buildMailContent(
+                                SrMailTemplateEnum.MAIL_FWPT_PASS_REVIEW.getCode(),
+                                csUsers,
+                                null,
+                                paramMap,
+                                attachList
+                                );
+                        srRemoteService.sendSrMail(emailMessageParam);
+                    });
