@@ -78,3 +78,5 @@ original: true
 
 ### 13. 世界卫生组织-全球卫生观察站(WHO Global Health Observatory)
 &emsp;&emsp;国家数据和统计信息，重点为对照性估计数；世卫组织为监测全球、区域和国家情况与趋势作出的分析。包含：主体信息、数据库、国家数据和分析报告。
+
+### 14. 全球经济指标数据网 *(https://zh.tradingeconomics.com/)*

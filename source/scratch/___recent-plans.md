@@ -17,3 +17,7 @@ ConditionalOnMissingBean
 ### Spring Security基本使用与研究（针对Chrome 80版本的优化方法）
 
 ### 深入研究Kafka
+
+### 全球疫情数据接口、 flourish功能研究
+
+### 手绘视频
