@@ -14,10 +14,11 @@ ConditionalOnProperty,
 ConditionalOnMissingBean
 的配合使用
 
-### Spring Security基本使用与研究（针对Chrome 80版本的优化方法）
+### 1. 正则表达式研究（分组、规则、提取）
 
-### 深入研究Kafka
+### 2. jquery控件及gtja-ui研究
 
-### 全球疫情数据接口、 flourish功能研究
+### 3. 深入研究Kafka
 
-### 手绘视频
+
+
