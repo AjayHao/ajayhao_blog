@@ -6,6 +6,10 @@ date: 2021-03-10 17:00:00
 original: true
 
 ---
+
+安装步骤参考三度大神博文：[Docker 部署 Confluence(破解版)](https://www.cnblogs.com/sanduzxcvbnm/p/13809276.html)
+
+
 ### 1. docker的镜像安装太慢
 centos 7下设置国内镜像方法： 
 1. 使用阿里云容器服务，登录后首页点击“创建我的容器镜像” 得到一个专属的镜像加速地址
@@ -60,3 +64,19 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Public Key
 
     # confluence要求设置事务级别为READ-COMMITTED
     set global tx_isolation='READ-COMMITTED';
+    
+###7. confluence调整数据库
+1.在confluence映射目录下找到confluence.cfg.xml文件，将安装阶段恢复成初始。将  
+      
+      <setupStep>complete</setupStep> 
+  调整为 
+      
+      <setupStep>setupstart</setupStep> 
+    
+2.删除confluence.cfg.xml节点属性包含hibernate的所有配置
+
+3.把对应数据源的jar包(比如Oracle的ojdbc8.jar)放到confluence工程的lib目录下(/opt/atlassian/confluence/confluence/WEB-INF/lib)
+
+4.重启confluence，访问主页会重新进入安装引导。
+
+   
