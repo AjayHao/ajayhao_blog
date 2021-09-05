@@ -96,7 +96,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: ajs
-#theme: 3-hexo
+#theme: 3-hexo  https://github.com/yelog/hexo-theme-3-hexo.git
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
