@@ -9,7 +9,7 @@ original: true
 
 安装步骤参考三度大神博文：[Docker 部署 Confluence(破解版)](https://www.cnblogs.com/sanduzxcvbnm/p/13809276.html)
 
-
+[toc]
 ### 1. docker的镜像安装太慢
 centos 7下设置国内镜像方法： 
 1. 使用阿里云容器服务，登录后首页点击“创建我的容器镜像” 得到一个专属的镜像加速地址

@@ -1,7 +1,7 @@
 title: Mybatis-JDBCType与javaType映射关系
 tags:
   - Mybatis
-  - java
+  - Java
 categories:
   - 技术
 thumbnail: '/images/thumbnails/mybatis.jpg'
